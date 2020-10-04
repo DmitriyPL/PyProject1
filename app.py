@@ -48,4 +48,5 @@ def tours(id):
     return render_template("tour.html", data=data, tour=tour, departure=departure)
 
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run()
